@@ -3,7 +3,7 @@ const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
-    // get/read requests
+    // get & read requests
     Query: {
         me: async (parent, args, context) => {
             if (context.user) {
